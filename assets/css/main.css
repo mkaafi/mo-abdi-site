@@ -10,8 +10,6 @@ html,body
     padding: 0px; 
 }
 
-
-*/
 /* Box Model */
 
 	*, *:before, *:after {
@@ -20,9 +18,6 @@ html,body
 		box-sizing: border-box;
 	}
 
-
-
-	
 
 
 /* Basic */
@@ -57,6 +52,100 @@ html,body
 			-ms-transition: none !important;
 			transition: none !important;
 		}
+
+
+/* Section/Article */
+
+	section.special, article.special {
+		text-align: center;
+	}
+
+		section.special article, article.special article {
+			text-align: left;
+		}
+
+	section.wrapper, article.wrapper {
+		padding: 6em 0;
+	}
+
+		section.wrapper header, article.wrapper header {
+			margin-bottom: 4em;
+		}
+
+			section.wrapper header h2, article.wrapper header h2 {
+				font-size: 2.75em;
+				margin: 0 0 .5em 0;
+			}
+
+			section.wrapper header p, article.wrapper header p {
+				font-size: 1em;
+			}
+
+		section.wrapper article header, article.wrapper article header {
+			margin: 0;
+		}
+
+		@media screen and (max-width: 980px) {
+
+			section.wrapper, article.wrapper {
+				padding: 4em 0;
+			}
+
+		}
+
+		@media screen and (max-width: 736px) {
+
+			section.wrapper, article.wrapper {
+				padding: 3em 0;
+			}
+
+				section.wrapper header, article.wrapper header {
+					margin-bottom: 2em;
+				}
+
+					section.wrapper header h2, article.wrapper header h2 {
+						font-size: 2em;
+					}
+
+					section.wrapper header p, article.wrapper header p {
+						font-size: .9em;
+					}
+
+		}
+
+		@media screen and (max-width: 480px) {
+
+			section.wrapper article, article.wrapper article {
+				text-align: center;
+			}
+
+		}
+
+	header p {
+		color: #bbb;
+		position: relative;
+		margin: 0 0 1.5em 0;
+	}
+
+	header h2 + p {
+		font-size: 1.25em;
+		margin-top: -1em;
+	}
+
+	header h3 + p {
+		font-size: 1.1em;
+		margin-top: -0.8em;
+	}
+
+	header h4 + p,
+	header h5 + p,
+	header h6 + p {
+		font-size: 0.9em;
+		margin-top: -0.6em;
+	}
+	#banner , p{
+		word-break: break-all;
+	}
 
 /* Type */
 
@@ -109,7 +198,7 @@ html,body
 		}
 
 	a {
-		color: #6cc091;
+		color: 	#9c0000; /*color*/
 		text-decoration: underline;
 	}
 
@@ -171,12 +260,6 @@ html,body
 		font-size: 0.7em;
 	}
 
-	
-
-	
-
-	
-
 	hr {
 		border: 0;
 		border-bottom: solid 1px #dbdbdb;
@@ -219,6 +302,7 @@ html,body
 			}
 
 		}
+
 
 /* Flex */
 
@@ -276,12 +360,237 @@ html,body
 /*about me */
 
 #about-me {
-	font-size:18px;
-	text-align:center;
-	border: 1px solid red;
+	font-size:16px;
+	font-family: sans-serif;
+	
 
 
 }
+/*2nd skill bar */
+
+
+#SkillBox {
+    font-size: 20px;
+    font-family: 'Indie Flower', cursive;
+    width: 95%;
+    height: auto;
+    margin: 40px auto;
+    background-color: #fff;
+    //border: 1px solid #cdcdcd;
+    padding: 10px;
+    border-radius:20px;
+    -o-border-radius:20px;
+    -webkit-border-radius:20px;
+    -ms-border-radius:20px;
+    -moz-border-radius:20px;  
+}
+#SkillBox img {
+    width: 20%;
+    height: 10%;
+    margin: auto 35%;
+    padding: 10px;
+}
+.SkillBar {
+    width: 90%;
+    height: 50px;
+    position: relative;
+    background: rgba(17, 17, 17, .3);
+    margin: 20px auto;
+}
+#Skill-HTML {
+    width: 90%;
+    animation: Animate-HTML 4s;
+    -webkit-animation: Animate-HTML 4s;
+    -moz-animation: Animate-HTML 4s;
+    -o-animation: Animate-HTML 4s;
+    height: 50px;
+    position: absolute;
+    background-color: #ea8564;
+}
+@keyframes Animate-HTML {
+    from {
+    width: 10px;
+}
+to {
+    width: 90%}
+}@-webkit-keyframes Animate-HTML {
+    from {
+    width: 10px;
+}
+to {
+    width: 90%}
+}@-moz-keyframes Animate-HTML {
+    from {
+    width: 10px;
+}
+to {
+    width: 100%}
+}@-o-keyframes Animate-HTML {
+    from {
+    width: 10px;
+}
+to {
+    width: 100%}
+}#Skill-CSS {
+    animation: Animate-CSS 5s;
+    -webkit-animation: Animate-CSS 5s;
+    -moz-animation: Animate-CSS 5s;
+    -o-animation: Animate-CSS 5s;
+    width: 80%;
+    height: 50px;
+    position: absolute;
+    background-color: #55a69f;
+}
+@keyframes Animate-CSS {
+    from {
+    width: 10px;
+}
+to {
+    width: 70%}
+}@-webkit-keyframes Animate-CSS {
+    from {
+    width: 10px;
+}
+to {
+    width: 70%}
+}@-moz-keyframes Animate-CSS {
+    from {
+    width: 10px;
+}
+to {
+    width: 70%}
+}@-o-keyframes Animate-CSS {
+    from {
+    width: 10px;
+}
+to {
+    width: 70%}
+}#Skill-jQuery {
+    animation: Animate-jQuery 5s;
+    -webkit-animation: Animate-jQuery 5s;
+    -moz-animation: Animate-jQuery 5s;
+    -o-animation: Animate-jQuery 5s;
+    width: 50%;
+    height: 50px;
+    position: absolute;
+    background-color: #99856d;
+}
+@keyframes Animate-jQuery {
+    from {
+    width: 10px;
+}
+to {
+    width: 50%}
+}@-webkit-keyframes Animate-jQuery {
+    from {
+    width: 10px;
+}
+to {
+    width: 50%}
+}@-moz-keyframes Animate-jQuery {
+    from {
+    width: 10px;
+}
+to {
+    width: 50%}
+}@-o-keyframes Animate-jQuery {
+    from {
+    width: 10px;
+}
+to {
+    width: 50%}
+}#Skill-JS {
+    animation: Animate-JS 4s;
+    -webkit-animation: Animate-JS 4s;
+    -moz-animation: Animate-JS 4s;
+    -o-animation: Animate-JS 4s;
+    width: 40%;
+    height: 50px;
+    position: absolute;
+    background-color: #c44e45;
+}
+@keyframes Animate-JS {
+    from {
+    width: 10px;
+}
+to {
+    width: 40%}
+}@-webkit-keyframes Animate-JS {
+    from {
+    width: 10px;
+}
+to {
+    width: 40%}
+}@-moz-keyframes Animate-JS {
+    from {
+    width: 10px;
+}
+to {
+    width: 40%}
+}@-o-keyframes Animate-JS {
+    from {
+    width: 10px;
+}
+to {
+    width: 65%}
+}#Skill-python {
+    animation: Animate-python 4s;
+    -webkit-animation: Animate-python 4s;
+    -moz-animation: Animate-python 4s;
+    -o-animation: Animate-python 4s;
+    width: 40%;
+    height: 50px;
+    position: absolute;
+    background-color: #5aa669;
+}
+@keyframes Animate-python {
+    from {
+    width: 10px;
+}
+to {
+    width: 40%}
+}@-webkit-keyframes Animate-python {
+    from {
+    width: 10px;
+}
+to {
+    width: 40%}
+}@-moz-keyframes Animate-python {
+    from {
+    width: 10px;
+}
+to {
+    width: 40%}
+}@-o-keyframes Animate-python {
+    from {
+    width: 10px;
+}
+to {
+    width: 40%}
+
+}.Skill-Area {
+    z-index: 1;
+    float: left;
+    //position: absolute;
+    margin-top: 15px;
+    margin-left: 10px;
+    text-shadow: none;
+    color: #fff;
+    //font-family: Lato-Regular, sans-serif;
+    font-size: 14px;
+}
+.PercentText {
+    z-index: 3;
+    position: relative;
+    padding-right: 8px;
+    margin-top: 15px;
+    float: right;
+    text-shadow: none;
+    color: #fff;
+    //font-family: Lato-Regular, sans-serif;
+    font-size: 14px;
+}
+
 
 /* Form */
 
@@ -333,7 +642,7 @@ html,body
 		-webkit-appearance: none;
 		-ms-appearance: none;
 		appearance: none;
-		background: #6cc091;
+		background: 	#9c0000; /*color*/
 		border-radius: 10px;
 		border: none;
 		border: solid 2px #8dcca9;
@@ -590,6 +899,15 @@ html,body
 
 /* List */
 
+	ol {
+		list-style: decimal;
+		margin: 0 0 2em 0;
+		padding-left: 1.25em;
+	}
+
+		ol li {
+			padding-left: 0.25em;
+		}
 
 	ul {
 		list-style: disc;
@@ -742,6 +1060,20 @@ html,body
 
 			}
 
+	dl {
+		margin: 0 0 2em 0;
+	}
+
+		dl dt {
+			display: block;
+			font-weight: 600;
+			margin: 0 0 1em 0;
+		}
+
+		dl dd {
+			margin-left: 2em;
+		}
+
 
 
 /* Button */
@@ -760,8 +1092,8 @@ html,body
 		-ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 		transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 		background-color: transparent;
-		box-shadow: inset 0 0 0 3px #6cc091;
-		color: #6cc091 !important;
+		box-shadow: inset 0 0 0 3px 	#9c0000; /*color*/
+		color: 	#9c0000 !important; /*color*/
 		border-radius: 30px;
 		border: 0;
 		cursor: pointer;
@@ -795,7 +1127,7 @@ html,body
 	}
 
 		.subpage #header {
-			background: #6cc091;
+			background: #9c0000; /*color*/
 			top: 0;
 			height: 44px;
 			line-height: 44px;
@@ -936,7 +1268,7 @@ html,body
 		position: fixed;
 		right: 0;
 		top: 0;
-		background: #6cc091;
+		background: 	#9c0000; /*color*/
 		color: #daefe3;
 		height: 100%;
 		max-width: 80%;
@@ -1011,6 +1343,7 @@ html,body
 				color: inherit;
 			}
 
+
 /* Banner */
 
 	#banner {
@@ -1037,7 +1370,7 @@ html,body
 		#banner .inner {
 			border-top: 2px solid rgba(255, 255, 255, 0.2);
 			position: relative;
-			z-index: 10005;
+			z-index: 1;
 			padding-top: 8em;
 		}
 
@@ -1058,11 +1391,12 @@ html,body
 		}
 
 		#banner .icon {
-			color: #6cc091;
+			color: 	#9c0000; /*color*/
 			font-size: 2em;
 		}
 
 		#banner p {
+			
 			font-size: 1em;
 			color: rgba(255, 255, 255, 0.55);
 			margin-bottom: 1.75em;
@@ -1179,11 +1513,43 @@ html,body
 
 		}
 
+/*type writer effect*/
+/* DEMO-SPECIFIC STYLES */
+.typewriter h1 {
+  color: #fff;
+  font-family: monospace;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid #9c0000; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(30, end),
+    blink-caret .5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #9c0000 }
+}
+
+.fa {
+	font-size: 30px;
+	color: 	#9c0000;
+}
+
 /* Footer */
 
 	#footer {
 		padding: 6em 0;
-		background: #6cc091;
+		background: 	#9c0000;  /*color*/
 		color: #fff;
 		text-align: center;
 	}
@@ -1250,10 +1616,10 @@ ul {
 .footer-social-icons {
     width: auto;
     display:block;
-    margin: 0 auto;
+    margin: 0;
 }
 .social-icon {
-    color: #fff;
+    color: #000;
 }
 ul.social-icons {
     margin-top: 10px;
@@ -1274,7 +1640,7 @@ ul.social-icons {
     -moz-transition:.5s;
     -webkit-transition:.5s;
     transition: .5s;
-    background-color: #322f30;
+    background-color: #fff;
     border-radius: 100%;
 }
 .fa-github:hover {
@@ -1288,40 +1654,14 @@ ul.social-icons {
     -moz-transition:.5s;
     -webkit-transition:.5s;
     transition: .5s;
-    background-color: #322f30;
+    background-color: #fff;
     border-radius: 100%;
 }
 .fa-twitter:hover {
     background-color: #00aced;
     color:#fff;
 }
-.fa-rss {
-    padding:10px 14px;
-    -o-transition:.5s;
-    -ms-transition:.5s;
-    -moz-transition:.5s;
-    -webkit-transition:.5s;
-    transition: .5s;
-    background-color: #322f30;
-    border-radius: 100%;
-}
-.fa-rss:hover {
-    background-color: #eb8231;
-}
-.fa-youtube {
-    padding:10px 14px;
-    -o-transition:.5s;
-    -ms-transition:.5s;
-    -moz-transition:.5s;
-    -webkit-transition:.5s;
-    transition: .5s;
-    background-color: #322f30;
-    border-radius: 100%;
-}
-.fa-youtube:hover {
-    background-color: #e64a41;
-    color:#fff;
-}
+
 .fa-linkedin {
     padding:10px 14px;
     -o-transition:.5s;
@@ -1329,24 +1669,24 @@ ul.social-icons {
     -moz-transition:.5s;
     -webkit-transition:.5s;
     transition: .5s;
-    background-color: #322f30;
+    background-color: #fff;
     border-radius: 100%;
 }
 .fa-linkedin:hover {
     background-color: #0073a4;
     color:#fff;
 }
-.fa-google-plus {
+.fa-codepen {
     padding:10px 12px;
     -o-transition:.5s;
     -ms-transition:.5s;
     -moz-transition:.5s;
     -webkit-transition:.5s;
     transition: .5s;
-    background-color: #322f30;
+    background-color: #fff;
     border-radius: 100%;
 }
-.fa-google-plus:hover {
-    background-color: #e25714;
+.fa-codepen:hover {
+    background-color: #fcd000;
     color:#fff;
 }
