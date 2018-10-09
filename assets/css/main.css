@@ -1516,6 +1516,8 @@ to {
 
 		}
 
+
+
 /*type writer effect*/
 /* DEMO-SPECIFIC STYLES */
 .typewriter h1 {
@@ -1547,6 +1549,14 @@ to {
 .fa {
 	font-size: 30px;
 	color: 	#9c0000;
+}
+
+
+
+
+/*margin between sections */
+.margin-top {
+	margin: 65px;
 }
 
 /* Footer */
