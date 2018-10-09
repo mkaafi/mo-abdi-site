@@ -366,9 +366,7 @@ html,body
 
 
 }
-/*2nd skill bar */
-
-
+/*skill bar */
 #SkillBox {
     font-size: 20px;
     font-family: 'Indie Flower', cursive;
@@ -590,7 +588,10 @@ to {
     //font-family: Lato-Regular, sans-serif;
     font-size: 14px;
 }
-
+.scrollable {
+	height:400px;
+ 	overflow-y: scroll;
+}
 
 /* Form */
 
@@ -751,6 +752,7 @@ to {
 		border: 0;
 		display: inline-block;
 		position: relative;
+		padding: 15px;
 	}
 
 		.image img {
@@ -1368,10 +1370,11 @@ to {
 		}
 
 		#banner .inner {
-			border-top: 2px solid rgba(255, 255, 255, 0.2);
+			border-top: 3px solid rgba(255, 255, 255, 0.2);
 			position: relative;
 			z-index: 1;
 			padding-top: 8em;
+
 		}
 
 		#banner h1 {
@@ -1520,6 +1523,7 @@ to {
   font-family: monospace;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   border-right: .15em solid #9c0000; /* The typwriter cursor */
+  padding-left: 90px;
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: .15em; /* Adjust as needed */
