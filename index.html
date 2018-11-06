@@ -10,16 +10,18 @@
 		<link rel="stylesheet" href="dist/aos.css">
 		<!-- Bootstrap CSS -->
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+		<!-- animation link -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
 
 		<!-- font awesome -->
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 	</head>
-	<body class="bg-light">
+	<body>
 
 		<!-- Header -->
 			<header id="header">
 				<div class="inner">
-					<a href="index.html" class="logo"><strong>Mo Abdi </strong> </a>
+					<a href="index.html" class="logo"></a>
 					<nav id="nav">
 						<a href="index.html">Home</a>
 						<a href="about.html">About</a>
@@ -31,27 +33,26 @@
 			</header>
 			
 		<!-- Banner -->
-			<section id="banner">
-
+			<section id="banner" class="v-header">
 				<div class="inner">
-						<header>
-							<h1>Hello, I am Mo</h1>
-						</header>
-					<div class="flex">
-						<div class="typewriter">
-						  <h1>Front-end Web Developer</h1>
+					<div class="header-overlay">
+						<div class="header-content">
+							<h1>Hello, I'm Mo</h1>
+							<div class="typewriter">
+							  <h1>Front-End Web Developer</h1>
+							</div>
 						</div>
 					</div>
-
+		<br>
 					<footer>
-						<a href="#main-page" class="button">Get Started</a>
+						<a href="#main-page" class="animated bounceInRight delay-2s button" data-aos="zoom-out-up">Get Started</a>
 					</footer>
 				</div>
 			</section>
 
 
 		<!-- Three -->
-			<section id="main-page"  class="wrapper  margin-top align-center">
+			<section id="main-page" class="wrapper margin-top align-center">
 				<div class="inner">
 					<div class="flex flex-2">
 						<article data-aos="fade-up-right">
@@ -59,7 +60,7 @@
 								<img src="images/pic01.jpg" alt="Pic 01" />
 							</div>
 							
-								<h3>Hello there,<br />I'm Mohamed Abdi</h3>
+							<h3>Hello there,<br>I'm Mohamed Abdi</h3>
 							
 							<p>Front-end Web Developer based in Kuala Lumpur, Malaysia.<br>I'm very passionate about designing and developing <br> awesome fully responsive websites and apps.<br>I strive to  create unique and eye-catching websites<br> that inspire and engage.</p>
 							<footer>
@@ -79,8 +80,7 @@
 							</footer>
 						</article>
 					</div>
-				</div>
-					
+				</div>		
 			</section>
 
 			<div class="container text-center margin-top">
@@ -113,6 +113,14 @@
 			    </div>
 			  </div>
 			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col">
+				
+						
+					</div>
+				</div>
+			</div>
 
 
 
@@ -122,7 +130,7 @@
 				<div class="container">
 				  <div class="row">
 				    
-				    <div class="col-sm-5">
+				    <div class="col-sm-5 centered">
 			       		<div class="footer-social-icons">
 						    <h4 class="_14">Follow me on</h4>
 						    <ul class="social-icons">
@@ -134,12 +142,13 @@
 						</div>
 			         </div>
 				  </div>
-				</div>
-				<div class="inner">
+				  <div >
 					<div class="copyright">
 						&copy; Build from: <a href="https://templated.co"></a>. Images: <a href="https://unsplash.com">Unsplash</a>.
 					</div>
 				</div>
+				</div>
+				
 			</footer>
 
 		<!-- Scripts -->
@@ -154,7 +163,7 @@
 		    <script src="dist/aos.js"></script>
 			<script>
 			  AOS.init({
-			  	duration: 1500,
+			  	duration: 2500,
 			  });
 			</script>
 
